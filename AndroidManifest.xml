@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.witcos.parkingn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name="com.witcos.parkingn.MyApplication"
+        android:debuggable="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.witcos.parking.amos.activity.LoadingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.BMapApiDemoMain"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_basemap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.BaseMapDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_basemap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.CustomRouteOverlayDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.GeometryDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_geometry"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.PoiSearchDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_poi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.LocationOverlayDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_location"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.OfflineDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_offline"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.RoutePlanDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_route"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.GeoCoderDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_geocode"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.BusLineSearchDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_bus"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.CloudSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_cloud"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.MapControlDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_control"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.UISettingDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_ui"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.LayersDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_layers"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.OverlayDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_overlay"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.baidu.mapapi.search.PlaceCaterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.NaviDemo"
+            android:label="@string/demo_name_navi" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.CloudSearchDemo"
+            android:label="@string/title_activity_cloud_search_demo" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.BaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.MemberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.EditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.DetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.HistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.RegistActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.FindPWDActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.MoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.RoutePlanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.MapNActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.IntroActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.ShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.NomActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.ReservationsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.PaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.ReservationsSActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.RentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.RentSActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.OrderDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.CompletActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.NewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.ReservationsTActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.NewsOActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parking.amos.activity.NewsDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="jt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.witcos.parkingn.navigation.BNavigatorActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.witcos.parkingn.update.DownloadService" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <!-- <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>
